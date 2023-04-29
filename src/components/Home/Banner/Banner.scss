@@ -1,0 +1,106 @@
+@import "../../../css-config/mixins.scss";
+
+.hero-banner {
+  padding: 40px 0;
+  position: relative;
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+	
+  @include md {
+    height: calc(100vh - 80px);
+  }
+  .content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    position: relative;
+    @include md {
+      flex-direction: row;
+      max-width: 1200px;
+    }
+    .banner-img {
+      position: relative;
+      z-index: 9;
+      width: 200px;
+      margin-bottom: 20px;
+      @include md {
+        width: 400px;
+        padding-left: 2rem;
+        margin-right: 60px;
+        margin-top: 50px;
+        margin-bottom: 0;
+      }
+      @include xxl {
+        width: 600px;
+        padding-left: 3rem;
+        margin-right: 0;
+        margin-top: 0;
+      }
+    }
+    .text-content {
+      color: antiquewhite;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include md {
+        position: relative;
+        left: 1%;
+        
+      }
+      @include xxl {
+        left: 0;
+      }
+      h1 {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 20px;
+        @include md {
+          font-size: 60px;
+        }
+      }
+      p {
+        max-width: 350px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        @include md {
+          max-width: 500px;
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 40px;
+        }
+      }
+      .ctas {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .banner-cta {
+          text-transform: uppercase;
+          font-size: 11px;
+          font-weight: 500;
+          // width: fit-content;
+          border: 2px solid white;
+          border-radius: 8px;
+          padding: 10px 20px;
+					transition: all ease 0.3s;
+          cursor: pointer;
+          &.v2 {
+            background-color: white;
+            color: black;
+          }
+          &:hover {
+            opacity: 0.8;
+            transition: all ease 0.4s;
+            box-shadow: 1px 1px 10px black;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

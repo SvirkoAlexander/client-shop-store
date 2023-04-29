@@ -1,0 +1,148 @@
+@import "../../css-config/mixins.scss";
+
+.headAbout {
+  width: 100%;
+  display: flex;
+  background-image: url("../../assets/about/fon1.jpg");
+  background-size: cover;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+	&::after{
+	content: '';
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 1; left: 0;
+  background-color: rgba(0,0,0,0.5);
+   
+	}
+  @include md {
+    height: calc(100vh - 80px);
+  }
+
+  h1 {
+    font-size: 30px;
+    color: white;
+    padding: 30px;
+    position: relative;
+		z-index: 1;
+		
+		
+    &::after {
+      content: "";
+      position: absolute;
+      width: 83%;
+      height: 2px;
+      display: block;
+      margin: 15px auto;
+      background-color: rgba(223, 9, 238, 0.172);
+			
+    }
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: white;
+		z-index: 1;
+  }
+  .desc {
+    padding: 10px 0;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+    flex-direction: column;
+		z-index: 1;
+		margin-bottom: 20px;
+    li {
+      font-size: 20px;
+      color: white;
+      text-align: start;
+			
+    }
+  }
+}
+.container-about {
+  margin: 0 auto;
+  padding: 10px 20px;
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include md {
+      flex-direction: row;
+    }
+  }
+  .about2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include md {
+      flex-direction: row-reverse;
+    }
+  }
+  .about-image {
+    flex: 1;
+
+    img {
+      padding: 30px;
+      width: 300px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in;
+      }
+      @include md {
+        width: 500px;
+      }
+    }
+  }
+  .about-content {
+    h2 {
+      text-align: center;
+      padding: 20px;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
+.ctas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+	margin-bottom: 30px;
+  .banner-cta {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    // width: fit-content;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    &.v2 {
+      background-color: white;
+      color: black;
+    }
+    &:hover {
+      opacity: 0.8;
+      transition: all ease 0.4s;
+      box-shadow: 1px 1px 10px black;
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../css-config/mixins.scss";
+
+.buttonTop {
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  height: 50px;
+  width: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  &:hover {
+    color: #8e2de2;
+    transition: all 0.2s ease-in;
+  }
+  &.sticky1 {
+    transform: translateY(-30px);
+    animation: sticky1 0.4s ease forwards;
+  }
+}
+
+@keyframes sticky1 {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.376f109d.css",
+    "main.js": "/static/js/main.77809646.js",
+    "static/media/phone1.png": "/static/media/phone1.81b95610b6d54f8d18e7.png",
+    "static/media/fon1.jpg": "/static/media/fon1.787f03e2e914365f7a7a.jpg",
+    "static/media/banner-img.png": "/static/media/banner-img.0412d66280a0273effa2.png",
+    "static/media/newsletter-bg.jpeg": "/static/media/newsletter-bg.b6f22313149bdbb35069.jpeg",
+    "static/media/speaker-prod-2.webp": "/static/media/speaker-prod-2.3d7d2e99c70aca629a57.webp",
+    "static/media/headphone-prod-1.webp": "/static/media/headphone-prod-1.49810a1a193aa5efb36b.webp",
+    "static/media/earbuds-prod-4.webp": "/static/media/earbuds-prod-4.3da5a36747aae317d82e.webp",
+    "static/media/watch-prod-1.webp": "/static/media/watch-prod-1.50f973edaaeb9a581ab0.webp",
+    "index.html": "/index.html",
+    "main.376f109d.css.map": "/static/css/main.376f109d.css.map",
+    "main.77809646.js.map": "/static/js/main.77809646.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.376f109d.css",
+    "static/js/main.77809646.js"
+  ]
+}
